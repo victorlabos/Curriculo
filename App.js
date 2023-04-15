@@ -4,7 +4,13 @@ import { NavigationContainer } from '@react-natigation/native';
 import { createNativeStackNavigator } from 'react-navigation/native-stack';
 
 import Home from './src/pages/Home';
-import Home from './src/pages/Sobre';
+import Home from './src/pages/Formacao';
+import Home from './src/pages/Especializacao';
+import Home from './src/pages/Caracteristicas';
+import Home from './src/pages/Graduacao'
+import Home from './src/pages/Cursos';
+import Home from './src/pages/Academica';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -13,14 +19,22 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home}/>
-        <Stack.Sreen name="Sobre" component={Sobre}/>
+        <Stack.Sreen name="Formacao" component={Formacao}/>
+        <Stack.Sreen name="Especializacao" component={Especializacao}/>
+        <Stack.Sreen name="Caracteristicas" component={Caracteristicas}/>        
+        <Stack.Sreen name="Graduacao" component={Graduacao}/>
+        <Stack.Sreen name="Cursos" component={Cursos}/>
+        <Stack.Sreen name="Academica" component={Academica}/>
+        
+        
+        
+
       </Stack.Navigator>
     </NavigationContainer>
   );
-
 }
 
-
+    
 
 
 

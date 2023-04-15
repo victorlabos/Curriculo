@@ -1,10 +1,12 @@
 import React from "react";
-import { View, Text, StyleSheet,Button} from 'react-native';
+import { View, Text, StyleSheet, Button,Image} from 'react-native';
 
 const Home = ({navigation}) => {
     return(
         <View>
             <Text>Olá meu nome é Victor Labos e esse é meu currículo</Text>
+
+            <image style={estilos.Image}source={require('../imagens/download.jpg' )}/>
 
             <Button
                 title="Formação"
@@ -27,24 +29,21 @@ const Home = ({navigation}) => {
                 title="Cursos"
                 onPress={() => navigation.navigate ('cursos')}/>
 
-            <Button
-                title="Área_acadêmica"
-                onPress={() => navigation.navigate ('area_academica')}/>
-
-
-            <Button
-                title="TCC"
-                onPress={() => navigation.navigate ('tcc')}/>
-
-            <Button
-                title="Pessoal"
-                onPress={() => navigation.navigate ('pessoal')}/>
-
             </View>
     );
 }
 
 const estilos = StyleSheet.create({
+
+
+    image:{
+
+        width:190,
+        height:190,
+        borderRadius:15,
+        left:700,
+
+    }
 
 });
 

@@ -1,1 +1,0 @@
-<text>Eu continuo amando minha namorada</text>
