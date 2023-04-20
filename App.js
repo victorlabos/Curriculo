@@ -4,12 +4,12 @@ import { NavigationContainer } from '@react-natigation/native';
 import { createNativeStackNavigator } from 'react-navigation/native-stack';
 
 import Home from './src/pages/Home';
-import Home from './src/pages/Formacao';
-import Home from './src/pages/Especializacao';
-import Home from './src/pages/Caracteristicas';
-import Home from './src/pages/Graduacao'
-import Home from './src/pages/Cursos';
-import Home from './src/pages/Academica';
+import Formacao from './src/pages/Formacao';
+import Especializacao from './src/pages/Especializacao';
+import Caracteristicas from './src/pages/Caracteristicas';
+import Graduacao from './src/pages/Graduacao'
+import Cursos from './src/pages/Cursos';
+import Academica from './src/pages/Academica';
 
 
 const Stack = createNativeStackNavigator();
@@ -25,50 +25,11 @@ export default function App() {
         <Stack.Sreen name="Graduacao" component={Graduacao}/>
         <Stack.Sreen name="Cursos" component={Cursos}/>
         <Stack.Sreen name="Academica" component={Academica}/>
-        
-        
-        
-
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -77,4 +38,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+
 });

@@ -1,6 +1,8 @@
 import React from "react";
 import { View,Text, Button } from "react-native-web";
 
+import Botao from '../Componentes/Botao';
+
 const  Especializacao = ({navigation})  =>{
     return (
         <View>
@@ -15,7 +17,7 @@ const  Especializacao = ({navigation})  =>{
                 
             </Text>
             
-            <Button 
+            <Botao 
                 title="Voltar"
                 onPress={()=> navigation.goBack ()} />    
             </View>
